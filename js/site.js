@@ -83,7 +83,7 @@ sigma.utils.pkg('sigma.settings');
 
 var settings = {
 
-  labeltreshold: 0,
+  labeltreshold: 1,
   drawEdges: true,
   drawNodes: true,
   drawLabels: true,

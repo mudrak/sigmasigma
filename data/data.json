@@ -164,61 +164,61 @@
    },{
     "id":"3",
     "label":"RFE, Munich",
-    "size":"500",
+    "size":"1000",
     "type":"countries",
     "color":"#4286f4"
    },{
     "id":"13",
     "label":"Poland",
-    "size":"500",
+    "size":"1921",
     "type":"countries",
     "color":"#4286f4"
    },{
     "id":"23",
     "label":"USSR",
-    "size":"500",
+    "size":"1156",
     "type":"countries",
     "color":"#4286f4"
    },{
     "id":"2",
     "label":"USA",
-    "size":"500",
+    "size":"1243",
     "type":"countries",
     "color":"#4286f4"
    },{
     "id":"18",
     "label":"Czechoslovakia",
-    "size":"500",
+    "size":"1563",
     "type":"countries",
     "color":"#4286f4"
    },{
     "id":"17",
     "label":"Bulgaria",
-    "size":"500",
+    "size":"742",
     "type":"countries",
     "color":"#4286f4"
    },{
     "id":"1",
     "label":"Hungary",
-    "size":"500",
+    "size":"947",
     "type":"countries",
     "color":"#4286f4"
    },{
     "id":"15",
     "label":"Romania",
-    "size":"500",
+    "size":"1013",
     "type":"countries",
     "color":"#4286f4"
    },{
     "id":"26",
     "label":"SFR Yugoslavia",
-    "size":"500",
+    "size":"350",
     "type":"countries",
     "color":"#4286f4"
    },{
     "id":"66",
     "label":"Belgium",
-    "size":"500",
+    "size":"21",
     "type":"countries",
     "color":"#4286f4"
    }],

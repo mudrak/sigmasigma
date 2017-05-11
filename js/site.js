@@ -70,6 +70,8 @@ s.bind('clickNode', function(e) {
   s.graph.nodes().forEach(function(n) {
     if (toKeep[n.id]){
       n.hidden = false;
+    } else {
+    n.hidden = true
     }
   });
 

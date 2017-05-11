@@ -12,7 +12,7 @@ sigma.classes.graph.addMethod('neighbors', function(nodeId) {
 sigma.classes.graph.addMethod('hideNames', function() {
   var nodes = this.nodes().forEach(function(n){
     if(n.type == 'names') {
-      n.hidden = false;
+      n.hidden = true;
     };
   });
 });

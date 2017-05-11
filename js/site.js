@@ -64,6 +64,7 @@ s.bind('clickNode', function(e) {
 
   var nodeId = e.data.node.id;
   var toKeep = s.graph.neighbors(nodeId);
+  var nodeId = e.data.node.label;
 
   toKeep[nodeId] = e.data.node;
 

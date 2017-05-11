@@ -87,4 +87,4 @@ var settings = {
   drawLabels: true,
   drawEdgeLabels: false,
   
-});
+};

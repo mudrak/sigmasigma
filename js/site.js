@@ -47,7 +47,7 @@ sigma.parsers.json(
     setTimeout(function () {
       console.log('stopping')
       s.stopForceAtlas2()
-      }, 1000)
+      }, 500)
 
     s.settings({
         edgeColor: 'default',

@@ -55,6 +55,7 @@ sigma.parsers.json(
         enableEdgeHovering: true,
         edgeHoverSizeRatio: 10,
         labelThreshold: 1,
+        labelSize: 'proportional',
         minNodeSize: 5,
         maxNodeSize: 30
     });

@@ -79,4 +79,8 @@ s.bind('clickNode', function(e) {
   s.refresh();
 });
 
-sigInst.drawingProperties({ labelThreshold: 0 });
+var settings = {
+
+  labeltreshold: 0,
+  
+});

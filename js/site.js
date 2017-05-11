@@ -58,7 +58,7 @@ sigma.parsers.json(
         labelThreshold: 1,
         minNodeSize: 5,
         maxNodeSize: 30,
-        borderSize: 20
+      
     });
 
   }

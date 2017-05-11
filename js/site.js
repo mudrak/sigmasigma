@@ -52,6 +52,7 @@ sigma.parsers.json(
     s.settings({
         edgeColor: 'default',
         defaultEdgeArrow: 'source',
+        defaultEdgeType: 'curve',
         enableEdgeHovering: true,
         edgeHoverSizeRatio: 10,
         labelThreshold: 1,

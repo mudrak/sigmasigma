@@ -74,6 +74,7 @@ s.bind('clickNode', function(e) {
     n.hidden = true
     }
   });
+  labelThreshold = 0;
 
   s.refresh();
 });

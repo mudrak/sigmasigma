@@ -53,7 +53,8 @@ sigma.parsers.json(
         edgeColor: 'default',
         defaultEdgeArrow: 'source',
         enableEdgeHovering: true,
-        edgeHoverSizeRatio: 10
+        edgeHoverSizeRatio: 10,
+        labelTreshold: 1
     });
 
   }
@@ -78,15 +79,3 @@ s.bind('clickNode', function(e) {
 
   s.refresh();
 });
-
-sigma.utils.pkg('sigma.settings');
-
-var settings = {
-
-  labeltreshold: 1,
-  drawEdges: true,
-  drawNodes: true,
-  drawLabels: true,
-  drawEdgeLabels: false,
-  
-};

@@ -82,5 +82,9 @@ s.bind('clickNode', function(e) {
 var settings = {
 
   labeltreshold: 0,
+  drawEdges: true,
+  drawNodes: true,
+  drawLabels: true,
+  drawEdgeLabels: false,
   
 });

@@ -75,6 +75,7 @@ s.bind('clickNode', function(e) {
     }
   });
   labelThreshold = 0;
+});
 
   s.refresh();
 });

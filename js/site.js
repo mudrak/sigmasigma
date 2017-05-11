@@ -53,7 +53,7 @@ sigma.parsers.json(
         edgeColor: 'default',
         defaultEdgeArrow: 'source',
         enableEdgeHovering: true,
-        edgeHoverSizeRatio: 5
+        edgeHoverSizeRatio: 10
     });
 
   }

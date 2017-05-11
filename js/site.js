@@ -79,6 +79,8 @@ s.bind('clickNode', function(e) {
   s.refresh();
 });
 
+sigma.utils.pkg('sigma.settings');
+
 var settings = {
 
   labeltreshold: 0,

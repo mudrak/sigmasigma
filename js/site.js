@@ -54,7 +54,7 @@ sigma.parsers.json(
         defaultEdgeArrow: 'source',
         enableEdgeHovering: true,
         edgeHoverSizeRatio: 10,
-        labelTreshold: 1
+        labelTreshold: 0
     });
 
   }

@@ -4,7 +4,7 @@
     "label":"Nowak-Jezioranski, Jan",
     "size":"323",
     "type":"names",
-    "color":"#ff0000"
+    "color":"#496c05"
   },{
     "id":"161",
     "label":"Khruschev, Nikita",
@@ -40,19 +40,19 @@
     "label":"Wagner, Karol",
     "size":"206",
     "type":"names",
-    "color":"#ff0000"
+    "color":"#496c05"
   },{
     "id":"167",
     "label":"Hill, Russel J.",
     "size":"170",
     "type":"names",
-    "color":"#ff0000"
+    "color":"#496c05"
   },{
     "id":"168",
     "label":"Endrst, Jaroslav",
     "size":"169",
     "type":"names",
-    "color":"#ff0000"
+    "color":"#496c05"
   },{
     "id":"169",
     "label":"Brezhnev, Leonid",
@@ -76,7 +76,7 @@
     "label":"Pechacek, Jaroslav",
     "size":"154",
     "type":"names",
-    "color":"#ff0000"
+    "color":"#496c05"
    },{
     "id":"173",
     "label":"Dubcek, Aleksander",
@@ -130,7 +130,7 @@
     "label":"Pomian, Andrzej",
     "size":"115",
     "type":"names",
-    "color":"#ff0000"
+    "color":"#496c05"
    },{
     "id":"183",
     "label":"Novotny, Antonin",
@@ -142,7 +142,7 @@
     "label":"Kaufmann, Charles B.",
     "size":"101",
     "type":"names",
-    "color":"#ff0000"
+    "color":"#496c05"
    },{
     "id":"185",
     "label":"Tito, Josip Broz",
@@ -154,19 +154,19 @@
     "label":"Brandt",
     "size":"97",
     "type":"names",
-    "color":"#ff0000"
+    "color":"#496c05"
    },{
     "id":"187",
     "label":"Petzal, Horst",
     "size":"94",
     "type":"names",
-    "color":"#ff0000"
+    "color":"#496c05"
    },{
     "id":"3",
     "label":"RFE, Munich",
     "size":"1000",
     "type":"countries",
-    "color":"#4286f4"
+    "color":"#496c05"
    },{
     "id":"13",
     "label":"Poland",

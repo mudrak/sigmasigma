@@ -44,7 +44,7 @@ sigma.parsers.json(
     s.refresh();
 
     var config = {
-      edgeWeightInfluence: 2
+      edgeWeightInfluence: 0
     }
 
     s.startForceAtlas2(config);

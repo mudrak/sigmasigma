@@ -20,7 +20,7 @@ sigma.classes.graph.addMethod('hideNames', function() {
 var s = new sigma({
   renderers: [
     {
-      container: document.getElementById('container'),
+      container: document.getElementById('sigma_container'),
       type: 'canvas'
     }
   ]});
@@ -58,7 +58,7 @@ sigma.parsers.json(
         labelThreshold: 1,
         minNodeSize: 5,
         maxNodeSize: 30,
-      
+
     });
 
   }
@@ -79,7 +79,11 @@ s.bind('clickNode', function(e) {
     n.hidden = true
     }
   });
- 
+
 
   s.refresh();
+});
+
+$('a.moreinfo').on('click', function() {
+  $.fancybox.open($("#information"), {minWidth: 400, maxWidth: 800, maxHeight: 600});
 });

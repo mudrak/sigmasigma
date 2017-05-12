@@ -8,6 +8,7 @@
   <meta name="description" content="SigmaJS display test">
   <meta name="author" content="Josh / jozsef.bone@gmail.com">
 
+  <link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox.css"/>
   <link rel="stylesheet" href="css/styles.css?v=1.0">
 
   <!--[if lt IE 9]>
@@ -16,11 +17,105 @@
 </head>
 
 <body>
-  <div id="container"></div>
+  <div class="sigma-parent">
+    <div class="sigma-expand" id="sigma_container"></div>
+  </div>
+
+  <div id="mainpanel">
+    <div class="col">
+  		<div id="maintitle"><a href="http://www.osaarchivum.org"><img src="images/RFE Countries.png" alt="http://http://www.osaarchivum.org"></a></div>
+      <div id="title"><h2>RFE Countries Map</h2></div>
+      <div id="titletext">This virtual map represents the coverage of the Free Europe Committee/Radio Free Europe collection HU OSA 298 published by
+  Blinken OSA. To find the link to the documents on the selected country, click its name and follow the link in the description that appears on the right side of the page.
+  Parameter "Weight" in the appeared tab shows the number of mentions in the documents.
+  Click "More about this visualisation" below to read more information about the colleciton.</div>
+      <div class="info cf">
+        <dl>
+          <dt class="moreinformation"></dt>
+          <dd class="line"><a href="#information" class="line fb moreinfo">More about this visualisation</a></dd>
+        </dl>
+      </div>
+      <div id="legend">
+      	<div class="box">
+      		<h2>Legend:</h2>
+      		<dl>
+      		<dt class="node"></dt>
+      		<dd>Countries are sized based on weight. Weight parameter is visible after the click on a country. It reflects the number of messages with the name of the country.</dd>
+      		<dt class="edge"></dt>
+      		<dd>Thickness of edges - based on number of mentions</dd>
+      		<dt class="colours"></dt>
+      		<dd>From light blue to the dark blue/from 1 to 2000</dd>
+      		</dl>
+      	</div>
+      </div>
+      <div class="b1">
+      <form>
+        <div id="search" class="cf"><h2>Search:</h2>
+          <input type="text" name="search" value="Search by name" class="empty"><div class="state"></div>
+          <div class="results"></div>
+        </div>
+        <div class="cf" id="attributeselect" style="display: none;"><h2>Group Selector:</h2>
+          <div class="select">Select Group</div>
+  	      <div class="list cf" style="display: none;"><div style="line-height:12px"><a href="#rgb(59,174,231)"><div style="width:40px;height:12px;border:1px solid #fff;background:rgb(59,174,231);display:inline-block"></div> Group 1 (1 members)</a></div><div style="line-height:12px"><a href="#rgb(71,200,238)"><div style="width:40px;height:12px;border:1px solid #fff;background:rgb(71,200,238);display:inline-block"></div> Group 2 (61 members)</a></div><div style="line-height:12px"><a href="#rgb(72,201,239)"><div style="width:40px;height:12px;border:1px solid #fff;background:rgb(72,201,239);display:inline-block"></div> Group 3 (23 members)</a></div><div style="line-height:12px"><a href="#rgb(71,199,238)"><div style="width:40px;height:12px;border:1px solid #fff;background:rgb(71,199,238);display:inline-block"></div> Group 4 (17 members)</a></div><div style="line-height:12px"><a href="#rgb(15,54,192)"><div style="width:40px;height:12px;border:1px solid #fff;background:rgb(15,54,192);display:inline-block"></div> Group 5 (1 members)</a></div><div style="line-height:12px"><a href="#rgb(69,196,237)"><div style="width:40px;height:12px;border:1px solid #fff;background:rgb(69,196,237);display:inline-block"></div> Group 6 (1 members)</a></div><div style="line-height:12px"><a href="#rgb(70,197,238)"><div style="width:40px;height:12px;border:1px solid #fff;background:rgb(70,197,238);display:inline-block"></div> Group 7 (3 members)</a></div><div style="line-height:12px"><a href="#rgb(68,194,237)"><div style="width:40px;height:12px;border:1px solid #fff;background:rgb(68,194,237);display:inline-block"></div> Group 8 (1 members)</a></div><div style="line-height:12px"><a href="#rgb(70,198,238)"><div style="width:40px;height:12px;border:1px solid #fff;background:rgb(70,198,238);display:inline-block"></div> Group 9 (2 members)</a></div><div style="line-height:12px"><a href="#rgb(70,196,237)"><div style="width:40px;height:12px;border:1px solid #fff;background:rgb(70,196,237);display:inline-block"></div> Group 10 (1 members)</a></div><div style="line-height:12px"><a href="#rgb(69,194,237)"><div style="width:40px;height:12px;border:1px solid #fff;background:rgb(69,194,237);display:inline-block"></div> Group 11 (1 members)</a></div><div style="line-height:12px"><a href="#rgb(26,89,204)"><div style="width:40px;height:12px;border:1px solid #fff;background:rgb(26,89,204);display:inline-block"></div> Group 12 (1 members)</a></div><div style="line-height:12px"><a href="#rgb(60,175,231)"><div style="width:40px;height:12px;border:1px solid #fff;background:rgb(60,175,231);display:inline-block"></div> Group 13 (1 members)</a></div><div style="line-height:12px"><a href="#rgb(66,189,235)"><div style="width:40px;height:12px;border:1px solid #fff;background:rgb(66,189,235);display:inline-block"></div> Group 14 (1 members)</a></div><div style="line-height:12px"><a href="#rgb(67,191,236)"><div style="width:40px;height:12px;border:1px solid #fff;background:rgb(67,191,236);display:inline-block"></div> Group 15 (1 members)</a></div><div style="line-height:12px"><a href="#rgb(69,195,237)"><div style="width:40px;height:12px;border:1px solid #fff;background:rgb(69,195,237);display:inline-block"></div> Group 16 (2 members)</a></div><div style="line-height:12px"><a href="#rgb(68,192,236)"><div style="width:40px;height:12px;border:1px solid #fff;background:rgb(68,192,236);display:inline-block"></div> Group 17 (1 members)</a></div><div style="line-height:12px"><a href="#rgb(47,146,224)"><div style="width:40px;height:12px;border:1px solid #fff;background:rgb(47,146,224);display:inline-block"></div> Group 18 (1 members)</a></div><div style="line-height:12px"><a href="#rgb(63,181,233)"><div style="width:40px;height:12px;border:1px solid #fff;background:rgb(63,181,233);display:inline-block"></div> Group 19 (1 members)</a></div><div style="line-height:12px"><a href="#rgb(28,93,206)"><div style="width:40px;height:12px;border:1px solid #fff;background:rgb(28,93,206);display:inline-block"></div> Group 20 (1 members)</a></div><div style="line-height:12px"><a href="#rgb(37,122,216)"><div style="width:40px;height:12px;border:1px solid #fff;background:rgb(37,122,216);display:inline-block"></div> Group 21 (1 members)</a></div><div style="line-height:12px"><a href="#rgb(31,103,209)"><div style="width:40px;height:12px;border:1px solid #fff;background:rgb(31,103,209);display:inline-block"></div> Group 22 (1 members)</a></div><div style="line-height:12px"><a href="#rgb(37,120,215)"><div style="width:40px;height:12px;border:1px solid #fff;background:rgb(37,120,215);display:inline-block"></div> Group 23 (1 members)</a></div><div style="line-height:12px"><a href="#rgb(45,142,222)"><div style="width:40px;height:12px;border:1px solid #fff;background:rgb(45,142,222);display:inline-block"></div> Group 24 (1 members)</a></div><div style="line-height:12px"><a href="#rgb(1,12,177)"><div style="width:40px;height:12px;border:1px solid #fff;background:rgb(1,12,177);display:inline-block"></div> Group 25 (1 members)</a></div></div>
+        </div>
+      </form>
+      </div>
+    </div>
+  </div>
+
+  <div id="copyright">
+    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="images/CC.png"></a>
+  </div>
+
+  <div id="attributepane">
+  <div class="text">
+  	<div title="Close" class="left-close returntext"><div class="c cf"><span>Return to the full network</span></div></div>
+  <div class="headertext">
+  	<span>Information Pane</span>
+  </div>
+    <div class="nodeattributes">
+      <div class="name"></div>
+  	<div class="data"></div>
+      <div class="p">Connections:</div>
+      <div class="link">
+        <ul>
+        </ul>
+      </div>
+    </div>
+  	</div>
+  </div>
+
+  <div id="developercontainer">
+  	<a href="http://www.oii.ox.ac.uk" title="Oxford Internet Institute"><div id="oii"><span>OII</span></div></a>
+  	<a href="http://jisc.ac.uk" title="JISC"><div id="jisc"><span>JISC</span></div></a>
+  </div>
+
+  <div id="information" style="display: none;">
+  These 8,100 digital files were first available on November 3, 2015, for researchers only and covered the period of FEC activities from 1960-1964. OSA has only uploaded, this first chunk of a total database of 35,000 encrypted messages taking up 22 microfilm reels, ranging from 1960-1970.
+
+  Additional encrypted messages from the period 1950-1960 (11 microfilm reels) will be processed in the second phase of the project.
+
+  Originally, the collection came from the Hoover Institution Library and Archive http://www.hoover.org/library-archives  where it was stored since the early 1990’s.
+   It arrived to OSA in 2014, on a total of 101 microfilm reels which were all digitized recently by OSA. It is important to mention that all of the paper records created
+  by the FEC were destroyed after they were filmed on the microfilm reels. A careful look at the microfilm reels showed at least two groups of historical records. On one
+   side there was a correspondence from the FEC Presidential Office together with numerous encrypted short daily messages; while on the other side, there were records,
+  charts and graphics from the Engineering Department. Daily exchanges of encrypted messages between FEC in the New York headquarters and Radio Free Europe in
+  Munich covered a variety of themes ranging from administrative, technical, political, and those relating the program directives for Radio Free Europe. Some of the messages
+  are particularly interesting because they give an account of political and historical events, such the Cuban Missile crisis or the shooting-down of the US spy-plane over the Soviet Union, etc.
+  Once processed, these historical records will shed more light on the US’s Cold War initiative to combat Soviet influence and distortion of information in Eastern Europe. OSA hopes that
+   the public access to the new FEC digital collection will contribute to the better understanding of the trans-Atlantic connections, émigré aspirations, the operation of Radio Free Europe and finally
+   the FEC institution per se as valuable resources for further scholarly research on the Cold War era.
+  Link to the full description: http://www.osaarchivum.org/blog/Free-Europe-Committee-–-New-Digital-Collection-Online
+  </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.0/sigma.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.0/plugins/sigma.parsers.json.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.0/plugins/sigma.layout.forceAtlas2.min.js"></script>
+  <script
+    src="https://code.jquery.com/jquery-1.7.2.min.js"
+    integrity="sha256-R7aNzoy2gFrVs+pNJ6+SokH04ppcEqJ0yFLkNGoFALQ="
+    crossorigin="anonymous"></script>
+  <script src="js/fancybox/jquery.fancybox.pack.js"></script>
   <script src="js/site.js"></script>
 
 </body>

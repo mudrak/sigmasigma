@@ -43,10 +43,14 @@ sigma.parsers.json(
 
     s.refresh();
 
-    s.startForceAtlas2();
+    var config = {
+      edgeWeightInfluence: 2
+    }
+
+    s.startForceAtlas2(config);
     setTimeout(function () {
-      console.log('stopping')
-      s.stopForceAtlas2()
+      console.log('stopping');
+      s.stopForceAtlas2();
       }, 500)
 
     s.settings({
@@ -58,7 +62,7 @@ sigma.parsers.json(
         labelThreshold: 1,
         minNodeSize: 5,
         maxNodeSize: 30,
-
+        labelAlignment: 'center'
     });
 
   }
